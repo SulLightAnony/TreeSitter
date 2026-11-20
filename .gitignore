@@ -53,8 +53,8 @@ learning.md
 
 # Berkas PDF diabaikan kecuali laporan dan proposal pengumpulan
 *.pdf
-!laporan_draft.pdf
-!proposal_draf.pdf
+!laporan.pdf
+!proposal-draf.pdf
 
 # Editor dan konfigurasi IDE
 .vscode/
