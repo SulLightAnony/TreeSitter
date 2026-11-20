@@ -48,13 +48,15 @@ yarn.lock
 *.webp
 *.svg
 
-# Berkas dokumen pendukung
+# Berkas dokumen pendukung dan draf sementara
 learning.md
+PANDUAN_BELAJAR_TREE_SITTER.md
+Part 1 - Tree-sitter.md
+laporan_draft.md
+proposal_draf.md
 
 # Berkas PDF diabaikan kecuali laporan dan proposal pengumpulan
 *.pdf
-*.md
-!Part 1 - Tree-sitter.md
 !laporan.pdf
 !proposal-draf.pdf
 
