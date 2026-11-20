@@ -53,6 +53,8 @@ learning.md
 
 # Berkas PDF diabaikan kecuali laporan dan proposal pengumpulan
 *.pdf
+*.md
+!Part 1 - Tree-sitter.md
 !laporan.pdf
 !proposal-draf.pdf
 
