@@ -1,0 +1,17 @@
+﻿=== 1. query_fungsi.scm ===
+halo: 0 parameter
+tambah: 2 parameter
+hitung_total: 3 parameter
+ringkas_data: 4 parameter
+
+=== 2. query_print.scm ===
+baris 8: print("Halo dari program uji")
+baris 13: print("Hasil penjumlahan:", hasil)
+baris 27: print(info)
+baris 34: print("Folder saat ini:", Path.cwd())
+
+=== 3. query_import.scm ===
+baris 1: os
+baris 2: sys
+baris 3: pathlib
+baris 4: datetime

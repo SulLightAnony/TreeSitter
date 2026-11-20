@@ -1,0 +1,115 @@
+==================
+Perbandingan dasar string
+==================
+
+status = "open"
+
+---
+
+(query
+  (comparison
+    field: (identifier)
+    value: (string)))
+
+==================
+Perbandingan dengan angka, boolean, dan field bertitik
+==================
+
+customer.tier >= 2.5 and active = true
+
+---
+
+(query
+  (and_expression
+    left: (comparison
+      field: (identifier)
+      value: (number))
+    right: (comparison
+      field: (identifier)
+      value: (boolean))))
+
+==================
+Prioritas and lebih tinggi dari or
+==================
+
+a = 1 or b = 2 and c = 3
+
+---
+
+(query
+  (or_expression
+    left: (comparison
+      field: (identifier)
+      value: (number))
+    right: (and_expression
+      left: (comparison
+        field: (identifier)
+        value: (number))
+      right: (comparison
+        field: (identifier)
+        value: (number)))))
+
+==================
+Pengelompokan dengan tanda kurung
+==================
+
+(a = 1 or b = 2) and c = 3
+
+---
+
+(query
+  (and_expression
+    left: (parenthesized
+      (or_expression
+        left: (comparison
+          field: (identifier)
+          value: (number))
+        right: (comparison
+          field: (identifier)
+          value: (number))))
+    right: (comparison
+      field: (identifier)
+      value: (number))))
+
+==================
+Ekspresi not unari
+==================
+
+not archived = true
+
+---
+
+(query
+  (not_expression
+    operand: (comparison
+      field: (identifier)
+      value: (boolean))))
+
+==================
+Ekspresi in dengan tiga nilai
+==================
+
+status in ("open", "pending", "closed")
+
+---
+
+(query
+  (in_expression
+    field: (identifier)
+    values: (value_list
+      (string)
+      (string)
+      (string))))
+
+==================
+Ekspresi contains untuk pencarian teks
+==================
+
+title contains "invoice"
+
+---
+
+(query
+  (contains_expression
+    field: (identifier)
+    value: (string)))

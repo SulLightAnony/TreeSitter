@@ -1,0 +1,66 @@
+# Python cache dan virtual environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js dan tree-sitter artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Berkas parser biner hasil kompilasi lokal
+*.o
+*.obj
+*.dll
+*.dylib
+*.exe
+
+# Berkas gambar dan tangkapan layar (screenshot laporan)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+
+# Berkas dokumen pendukung
+learning.md
+
+# Berkas PDF diabaikan kecuali laporan dan proposal pengumpulan
+*.pdf
+!laporan_draft.pdf
+!proposal_draf.pdf
+
+# Editor dan konfigurasi IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

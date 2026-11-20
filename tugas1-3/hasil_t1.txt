@@ -1,0 +1,17 @@
+﻿=== 1. Fungsi ===
+Pohon: (module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (binary_operator left: (string (string_start) (string_content) (string_end)) right: (identifier))))))
+Anak langsung function_definition:
+  - def: anonim
+  - identifier: bernama
+  - parameters: bernama
+  - :: anonim
+  - block: bernama
+
+=== 2. If / Else ===
+Pohon: (module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (assignment left: (identifier) right: (string (string_start) (string_content) (string_end))))) alternative: (else_clause body: (block (expression_statement (assignment left: (identifier) right: (string (string_start) (string_content) (string_end))))))))
+
+=== 3. Kelas ===
+Pohon: (module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (string (string_start) (string_content) (string_end))))))))
+
+=== 4. Kode Rusak (tanpa titik dua) ===
+Pohon: (module (ERROR (identifier) (parameters (identifier)) (identifier)))

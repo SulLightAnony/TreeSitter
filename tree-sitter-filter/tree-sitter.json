@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "filter",
+      "camelcase": "Filter",
+      "scope": "source.filter",
+      "file-types": [
+        "filter"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "^filter$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Filter DSL grammar for Tree-sitter",
+    "authors": [
+      {
+        "name": "Mahasiswa"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/example/tree-sitter-filter"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "java": false,
+    "node": false,
+    "python": true,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}
